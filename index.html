@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Busters Do It Yourself | Pest Control Supplies — Brandon, Bradenton &amp; Sarasota</title>
+<meta name="description" content="Bug Busters Do It Yourself — professional-grade pest control products for do-it-yourselfers since 1993. Three Florida stores: Brandon, Bradenton and Sarasota. Call (813) 651-4477.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c0392b; --red-dark:#96281b; --red-light:#fbeae7; --char:#2c2c30; --gold:#f0a52b;
+  --ink:#2b2b2e; --muted:#6b6b70; --bg:#fdfcfb; --card:#ffffff; --line:#eee4e2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.2}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Sora';font-weight:800;font-size:1.25rem;color:var(--char)}
+.brand span{color:var(--red)}
+.nav .phone{display:inline-flex;align-items:center;gap:.5rem;background:var(--red);color:#fff;font-weight:700;text-decoration:none;padding:.65rem 1.25rem;border-radius:999px;font-size:.95rem}
+.nav .phone:hover{background:var(--red-dark)}
+.hero{background:linear-gradient(135deg,#3a2220 0%,#96281b 60%,#c0392b 100%);color:#fff;padding:96px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(240,165,43,.25),transparent 45%)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:.35rem .9rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:800;max-width:16em;margin-bottom:1rem}
+.hero p{max-width:36em;color:#f7e8e6;font-size:1.1rem;margin-bottom:2rem}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.9rem 1.8rem;border-radius:999px;font-size:1rem}
+.btn-call{background:var(--gold);color:#2c2205}
+.btn-call:hover{filter:brightness(1.06)}
+.btn-mail{border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn-mail:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;flex-wrap:wrap}
+.trust-item{flex:1 1 200px;padding:1.15rem 1.25rem;display:flex;align-items:center;gap:.8rem;font-weight:600;font-size:.95rem;color:var(--char)}
+.trust-item+.trust-item{border-left:1px solid var(--line)}
+.tick{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--red-light);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800}
+section.block{padding:84px 0}
+.kicker{color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:.6rem}
+.block h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--char);margin-bottom:1rem}
+.lead{color:var(--muted);max-width:44em;font-size:1.05rem;margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.9rem 1.7rem;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(192,57,43,.10)}
+.icon{width:48px;height:48px;border-radius:14px;background:var(--red-light);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.1rem}
+.card h3{font-size:1.1rem;color:var(--char);margin-bottom:.5rem}
+.card p{font-size:.94rem;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+.about .facts{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2.2rem}
+.fact{display:flex;gap:1rem;margin-bottom:1.4rem}
+.fact:last-child{margin-bottom:0}
+.fact b{color:var(--char)}
+.fact p{color:var(--muted);font-size:.95rem}
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.loc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2rem 1.7rem}
+.loc h3{color:var(--red-dark);margin-bottom:.6rem;font-size:1.25rem}
+.loc p{color:var(--muted);font-size:.94rem;margin-bottom:.4rem}
+.loc a{color:var(--red);font-weight:700;text-decoration:none;font-size:1.05rem}
+.loc a:hover{text-decoration:underline}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2rem 1.7rem}
+.step .num{font-family:'Sora';font-weight:800;font-size:2rem;color:var(--gold);margin-bottom:.6rem}
+.step h3{color:var(--char);margin-bottom:.5rem}
+.step p{color:var(--muted);font-size:.94rem}
+.contact{background:var(--char);color:#fff;border-radius:24px;padding:3.5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact h2{color:#fff}
+.contact .lead{color:#cfc9c9}
+.c-line{margin:1.2rem 0}
+.c-line .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#a89f9f;margin-bottom:.25rem}
+.c-line a{color:#fff;font-weight:700;text-decoration:none;font-size:1.15rem}
+.c-line a:hover{color:var(--gold)}
+.hrs{font-weight:600;font-size:1rem}
+footer{background:#1d1d20;color:#a89f9f;padding:2.5rem 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:#cfc9c9;text-decoration:none}
+@media(max-width:860px){
+  .grid,.steps,.loc-grid{grid-template-columns:1fr 1fr}
+  .about,.contact{grid-template-columns:1fr}
+  .trust-item+.trust-item{border-left:none;border-top:1px solid var(--line)}
+}
+@media(max-width:560px){.grid,.steps,.loc-grid{grid-template-columns:1fr}.hero{padding:64px 0 56px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Bug Busters <span>Do It Yourself</span></div>
+    <a class="phone" href="tel:+18136514477">☎ (813) 651-4477</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">DIY Pest Control Supply · Since 1993</div>
+    <h1>Pro-Grade Pest Control Products — You Do It Yourself</h1>
+    <p>We're a full-service retail store specializing in pest control supplies for do-it-yourselfers. The same products the pros use — plus the advice to use them right — at three Florida locations.</p>
+    <div class="cta-row">
+      <a class="btn btn-call" href="tel:+18136514477">Call (813) 651-4477</a>
+      <a class="btn btn-mail" href="mailto:bugbustersdiybradenton@gmail.com">Email Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><span class="tick">✓</span> Helping DIYers Since 1993</div>
+    <div class="trust-item"><span class="tick">✓</span> 3 Florida Stores</div>
+    <div class="trust-item"><span class="tick">✓</span> Kid &amp; Pet-Friendly Options</div>
+    <div class="trust-item"><span class="tick">✓</span> Free Expert Advice In-Store</div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">What We Sell</div>
+    <h2>Pest Control Supplies for Every Problem</h2>
+    <p class="lead">We help you eliminate pests on your own with the right products and the right guidance. These are real solutions our customers use every day.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🏠</div><h3>Residential DIY Products</h3><p>Do-it-yourself sprays and treatments to safeguard your family and home from common pests.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Eco-Friendly Options</h3><p>Kid and pet-friendly products from ECO®, made with natural oils like clove and thyme.</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>Tough Chemical Formulas</h3><p>Demand™ and other professional formulas that kill ants, roaches, and wasps effectively.</p></div>
+      <div class="card"><div class="icon">🛏️</div><h3>Bed Bug &amp; Flea Treatments</h3><p>Sprays like Bedlam to eliminate fleas and bed bugs from your home.</p></div>
+      <div class="card"><div class="icon">🐜</div><h3>Termite &amp; Ant Solutions</h3><p>Bora-Care®, Primis, and Termidor for lasting control of ants, termites, and roaches.</p></div>
+      <div class="card"><div class="icon">🌳</div><h3>Lawn &amp; Yard Treatments</h3><p>Talstar® in granulate and concentrate forms — easy to mix and apply around your yard, 2–3 times a year.</p></div>
+      <div class="card"><div class="icon">🏢</div><h3>Commercial Supplies</h3><p>Affordable pest control solutions for businesses, with lasting control for any pest problem.</p></div>
+      <div class="card"><div class="icon">🧪</div><h3>Perimeter Treatments</h3><p>Baseboard and outside-perimeter treatments that stop pests before they get inside.</p></div>
+      <div class="card"><div class="icon">💬</div><h3>Expert Guidance</h3><p>Tell us your pest problem and environment — we'll recommend the right treatment and show you how to use it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="kicker">Our Locations</div>
+    <h2>Three Stores Across Florida</h2>
+    <p class="lead">Walk in, tell us about your pest problem, and leave with the right products and the know-how to use them.</p>
+    <div class="loc-grid">
+      <div class="loc">
+        <h3>Brandon</h3>
+        <p>528 E Brandon Blvd<br>Brandon, FL 33511</p>
+        <a href="tel:+18136514477">(813) 651-4477</a>
+      </div>
+      <div class="loc">
+        <h3>Bradenton</h3>
+        <p>3790 14th St W<br>Bradenton, FL 34205</p>
+        <a href="tel:+19417466654">(941) 746-6654</a>
+      </div>
+      <div class="loc">
+        <h3>Sarasota</h3>
+        <p>5900 S Tamiami Trail, Suite M<br>Sarasota, FL 34231</p>
+        <a href="tel:+19419221817">(941) 922-1817</a>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Describe Your Pest</h3><p>Come into any store or call us. Tell us what pest you're dealing with and where.</p></div>
+      <div class="step"><div class="num">02</div><h3>Get the Right Products</h3><p>We'll recommend professional-grade products matched to your problem and environment.</p></div>
+      <div class="step"><div class="num">03</div><h3>Treat It Yourself</h3><p>Easy-to-use granulates, concentrates, and sprays — plus our guidance so you apply them right.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="kicker">About Us</div>
+        <h2>Florida's DIY Pest Control Store Since 1993</h2>
+        <p class="lead" style="margin-bottom:1.5rem">Bug Busters Do It Yourself Pest Control has been helping local residents control pest infestations for over 30 years. We believe you can handle pest problems yourself — you just need the right products and a little expert advice.</p>
+        <p style="color:var(--muted)">As a full-service retail store, we stock the same professional products exterminators use, in granulate and concentrate forms that are easy to mix and apply. Whether it's ants in the kitchen or termites in the crawl space, we have the right supplies to enable you to get rid of pests on your own.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="tick">✓</span><div><b>Since 1993</b><p>Over 30 years helping Florida DIYers beat pests.</p></div></div>
+        <div class="fact"><span class="tick">✓</span><div><b>3 Convenient Locations</b><p>Brandon, Bradenton, and Sarasota — walk in today.</p></div></div>
+        <div class="fact"><span class="tick">✓</span><div><b>Eco-Friendly Options</b><p>Natural, kid and pet-safe products available.</p></div></div>
+        <div class="fact"><span class="tick">✓</span><div><b>Residential &amp; Commercial</b><p>Supplies for homes and businesses alike.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Got a Pest Problem? We Have the Fix.</h2>
+        <p class="lead">Visit any of our three stores or give us a call — we'll point you to the right products and show you how to use them.</p>
+        <a class="btn btn-call" href="tel:+18136514477">Call (813) 651-4477</a>
+      </div>
+      <div>
+        <div class="c-line"><div class="lbl">Brandon Store</div><a href="tel:+18136514477">(813) 651-4477</a></div>
+        <div class="c-line"><div class="lbl">Bradenton Store</div><a href="tel:+19417466654">(941) 746-6654</a></div>
+        <div class="c-line"><div class="lbl">Sarasota Store</div><a href="tel:+19419221817">(941) 922-1817</a></div>
+        <div class="c-line"><div class="lbl">Email</div><a href="mailto:bugbustersdiybradenton@gmail.com">bugbustersdiybradenton@gmail.com</a></div>
+        <div class="c-line"><div class="lbl">Hours</div><div class="hrs">Mon–Fri: 9:00 AM – 5:30 PM · Sat: 9:00 AM – 2:30 PM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Bug Busters Do It Yourself. All rights reserved.</div>
+    <div><a href="mailto:bugbustersdiybradenton@gmail.com">bugbustersdiybradenton@gmail.com</a> · <a href="tel:+18136514477">(813) 651-4477</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
